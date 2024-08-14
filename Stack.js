@@ -21,6 +21,6 @@ export class Stack {
   }
 
   print() {
-    console.log(this.stack);
+    return this.stack;
   }
 }
