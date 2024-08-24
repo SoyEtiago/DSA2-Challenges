@@ -44,5 +44,16 @@ console.log(animals);
 animals.push('chickens', 'cats', 'dogs');
 console.log(animals);
 
+// Array.splice()
 
+let arr = ["Yo", "estudio", "JavaScript", "ahora", "mismo"];
 
+// remueve los primeros 3 elementos y los reemplaza con otros
+arr.splice(0, 3, "a", "bailar");
+
+console.log(arr);
+
+// remueve los 2 primeros elementos
+let removed = arr.splice(0, 2);
+
+console.log(removed);
