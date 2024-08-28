@@ -1,3 +1,5 @@
+import './App.css';
+
 const title = 'First App';
 // Props recibe un objecto - puede manejar Destructuring assignment {title}
 const FirstApp = ( props ) => {
