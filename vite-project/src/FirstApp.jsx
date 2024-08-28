@@ -1,9 +1,9 @@
 const title = 'First App';
-
-const FirstApp = () => {
+// Props recibe un objecto - puede manejar Destructuring assignment {title}
+const FirstApp = ( props ) => {
   return (
     <>
-    <h1> {title} </h1>
+    <h1> {props.title} </h1>
     <span>10</span>
     </>
   )
