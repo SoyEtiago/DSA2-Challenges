@@ -1,4 +1,6 @@
-class LinkedList {
+import {Node} from "./Node.mjs";
+
+export class LinkedList {
   constructor() {
     this.head = null;
     this.head = null;
@@ -32,7 +34,7 @@ class LinkedList {
     if(this.head === null) return 0;
 
     if(current.next !== null) {
-      return this.size(current.next, acum++);
+      return this.size(current.next, acum = acum + 1);
     }
 
     return acum;
