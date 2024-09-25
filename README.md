@@ -8,3 +8,5 @@
 - Add a new Button to add categories.
 - Use useState hook to addCategories to the list with onClick event button.
 - Inside above item, call setCategory to clear input field after add one category.
+
+- [ ] Divide in components
