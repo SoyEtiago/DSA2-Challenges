@@ -75,3 +75,17 @@ button:focus-visible {
     grid-column-gap: 12px;
     grid-row-gap: 12px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .display {
+  margin: 12px;
+  background-color: #213547;
+  color: white;
+}
+
+.clearBttn {
+  background-color: red;
+}
