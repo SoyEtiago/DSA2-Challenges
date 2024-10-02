@@ -15,11 +15,13 @@ export const TodoApp = () => {
     <>
       <Title/>
       <div className="row">
-        <div className="col-7"> 
+        <div className="col"> 
           <ul className="list-group">
             <TodoItem/>
           </ul>
+        <div className="col">
           <TodoForm/>
+        </div>
         </div>
       </div>
     </>
