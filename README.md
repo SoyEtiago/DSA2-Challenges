@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 #### Create and handle new queue of people in one ATM.
 
