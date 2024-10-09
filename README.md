@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 #### Create and handle new graph of friends and cities.
 - Every person should be a node, and every city too.
