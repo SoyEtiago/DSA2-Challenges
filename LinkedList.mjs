@@ -60,8 +60,15 @@ export class LinkedList {
   print() {
     let node = this.head;
     while(node !== null) {
-      console.log( `Valor ${node.value} | Next: ${node.next?.value || null}` );
-      node = node.next;
+      const value = typeof node.value === 'object' 
+      ? JSON.stringify(node.value, null, 2) 
+      : node.value;
+    const nextValue = typeof node.next?.value === 'object' 
+      ? JSON.stringify(node.next?.value, null, 2) 
+      : node.next?.value || null;
+
+    console.log(`Valor: ${value}  | Next: ${nextValue}\n`);
+    node = node.next;
     }
   }
 }

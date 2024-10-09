@@ -5,13 +5,17 @@ let task = {
   descripcion: "Esta es la tarea uno."
 }
 
+let task2 = {
+  title: "Tarea2",
+  descripcion: "Esta es la tarea dos."
+}
+
 let toDoLinkedList = new LinkedList();
 
-toDoLinkedList.append("nodo1");
-toDoLinkedList.append("nodo2");
-toDoLinkedList.append("nodo3");
+toDoLinkedList.append(task);
+toDoLinkedList.append(task2);
 toDoLinkedList.print();
-console.log(toDoLinkedList.peek("Nodo2"));
+console.log(toDoLinkedList.peek(task2));
 console.log(toDoLinkedList.size());
-console.log(toDoLinkedList.remove("nodo2"));
+console.log(toDoLinkedList.remove(task2));
 toDoLinkedList.print();
