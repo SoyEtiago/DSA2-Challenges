@@ -18,7 +18,7 @@ export const GifExpertApp = () => {
       </div>
       <div className="row">
         <AddCategory onAddCategory={onAddCategory} className="col"/>
-      </div>      
+      </div>     
       <div className="container-fluid">
         {
           categories.map(

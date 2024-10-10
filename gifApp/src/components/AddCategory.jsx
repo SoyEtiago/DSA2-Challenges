@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 
-export const AddCategory = ({onAddCategory}) => {
-  const [inputValue, setInputValue] = useState('...');
+export const AddCategory = memo(({onAddCategory}) => {
+  const [inputValue, setInputValue] = useState('');
 
   const onInputChange = (evt) => {
     setInputValue(evt.target.value);
@@ -25,4 +25,4 @@ export const AddCategory = ({onAddCategory}) => {
     </form>
   )
 
-}
+})

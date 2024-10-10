@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 - Invoke getGifs function inside a new function in GifGrid Component, keep in mind, it’s an async function.
 - Invoke new function from above to get list of images, use a useState hook to handle the list.
