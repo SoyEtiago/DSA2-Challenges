@@ -1,21 +1,10 @@
 import "./App.css"
 import { useState } from "react"
+import { useCounter } from "./hooks/useCounter";
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
+  const { counter, increment, decrement, reset, setValue } = useCounter(0);
   const [inputValue, setInputValue] = useState('');
-
-  const handleAdd = () => {
-    setCounter(counter + 1);
-  }
-
-  const handleSubstract = () => {
-    if(counter > 0) setCounter(counter - 1);
-  }
-
-  const handleReset = () => {
-    setCounter(0);
-  }
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
@@ -23,10 +12,8 @@ const App = () => {
 
   const handleSetValue = () => {
     const valorNumerico = parseInt(inputValue, 10);
-    if (!isNaN(valorNumerico) && valorNumerico >= 0) {
-      setCounter(valorNumerico);
-    } else {
-      setCounter(0);
+    if (!isNaN(valorNumerico)) {
+      setValue(valorNumerico);
     }
     setInputValue('');
   }
@@ -35,9 +22,9 @@ const App = () => {
     <>
       <h1>Counter</h1>
       <span style={{ display: "block", marginBottom: "12px" }}>{counter}</span>
-      <button onClick={handleAdd}>+1</button>
-      <button onClick={handleReset}>Reset</button>
-      <button onClick={handleSubstract}>-1</button>
+      <button onClick={increment}>+1</button>
+      <button onClick={reset}>Reset</button>
+      <button onClick={decrement}>-1</button>
       <p>Valor personalizado</p>
       <input 
         id="customValue"

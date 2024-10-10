@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 - Create a new customHook called useCounter.
 - Implement followed methods to handle counter:
