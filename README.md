@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [  ] Done
+- [ ] Done
 
 1. Implement delete button to erase a TODO by clicking on it
 2. Implement toggle decoration with a css style with line-through when TODO is done or not, by clicking on SPAN tag from TodoItem
