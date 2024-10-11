@@ -1,4 +1,4 @@
 # DSA2-Coursework
-- [ ] Done
+- [x] Done
 
 Fix follow components to avoid re renders
