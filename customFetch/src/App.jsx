@@ -4,9 +4,9 @@ import useFetch from './Hooks/useFetch'
 
 function App() {
 
-  const API = "https://api.giphy.com/v1/gifs/search?api_key=moZznorHYNukeAr405oLywKqmcc3f6n2&q=cats&limit=25&offset=0&rating=g&lang=en&bundle=messaging_non_clips"
+  const API = "https://api.giphy.com/v1/gifs/search?api_key=dLI1g5cko27M2iCKKvHU2PfJaowGBTu2&q=${category}&limit=25&offset=0&rating=g&lang=ens"
   
-  const {adata, isLoading, hasError} = useFetch(API);
+  const {data, isLoading, hasError} = useFetch(API);
 
   const [data, setData] = useState(null)
 
