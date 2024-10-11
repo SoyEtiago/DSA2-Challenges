@@ -1,8 +1,6 @@
 # DSA2-Coursework
-
-- [  ] Done
-
-1. Implement delete button to erase a TODO by clicking on it
-2. Implement toggle decoration with a css style with line-through when TODO is done or not, by clicking on SPAN tag from TodoItem
-3. Implement an useTODO custom hook to improve the reading of TodoApp component
-4. Implement countTodos and countPendingTodos in the above custom hook to show them in TodoApp
+- [ ] Done
+1. Split follow component into 3 components
+2. Handle and print list of todos, keep in mind it’s an array
+3. Handle form with a newTodo function. Parent must know what you wrote in the input text.
+4. Call new 3 components from TodoApp component
