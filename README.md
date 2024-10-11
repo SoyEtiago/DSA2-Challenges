@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 1. Test your fetch api by sending https://breakingbadapi.com/api/quotes/1 into a new component , print data into the page into blockquotes tag
 2. Check isLoading and returns a “Loading…” message until isLoading becomes false
