@@ -1,37 +1,26 @@
-import { useEffect, useState } from 'react';
-import './App.css'
+import { useEffect } from 'react';
 import useFetch from './Hooks/useFetch'
+import './App.css'
 
 function App() {
 
-  const API = "https://api.giphy.com/v1/gifs/search?api_key=dLI1g5cko27M2iCKKvHU2PfJaowGBTu2&q=${category}&limit=25&offset=0&rating=g&lang=ens"
-  
-  const {data, isLoading, hasError} = useFetch(API);
+  const { data, isLoading, hasError } = useFetch('https://api.giphy.com/v1/gifs/search?api_key=dLI1g5cko27M2iCKKvHU2PfJaowGBTu2&q=Hello&limit=25&offset=0&rating=g&lang=en');
 
-  const [data, setData] = useState(null)
-
-  const toJson = async () => {
-
-    setData(await adata.json());
-
-  }
-  
   useEffect(() => {
-
-    if(isLoading === false) {
-
-      toJson()
-
+    if (isLoading) {
+      console.log('Loading...');
     }
-    
 
-  }, [adata])
-  
-  return (
-    <>
-      {console.log(data)}
-    </>
-  )
-}
+    if (hasError) {
+      console.error('Error:', hasError);
+    }
+
+    if (data) {
+      console.log('Data:', JSON.stringify(data));
+    }
+  }, [data, isLoading, hasError]);
+
+  return null;
+};
 
 export default App
