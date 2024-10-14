@@ -3,7 +3,7 @@ export const TodoReducer = (initialState, action) => {
     case 'ABC':
       throw new Error('Action not yet implemented');
       break;
-    case 'Agregar TODO':
+    case '[TODO] ADD TODO':
       return [...initialState, action.payload]
     default:
       return initialState;
