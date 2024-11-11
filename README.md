@@ -1,6 +1,6 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 - Implement Login with email and password by using Redux and firebase
 - Implement Login with Google, by using Redux and firebase
