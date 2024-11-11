@@ -1,5 +1,5 @@
 # DSA2-Coursework
-- [ ] Done
+- [x] Done
 
 Create a new shared component NavComponent.jsx to handle navigation bar.
 - Use classes/styles to show a nice menu.

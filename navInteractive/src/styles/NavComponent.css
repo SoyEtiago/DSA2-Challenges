@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.nav-item.active a {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
