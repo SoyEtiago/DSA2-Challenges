@@ -1,5 +1,5 @@
 # DSA2-Coursework
 
-- [ ] Done
+- [x] Done
 
 - Implement decrement and incrementBy( VALUE ) in Redux.
