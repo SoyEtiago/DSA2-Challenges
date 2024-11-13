@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef } from "react"
-import { TodoForm, TodoList, Title } from "./components"
-import * as types from "./components/types"
+import { TodoForm, TodoList, Title } from "../components"
+import * as types from "../components/types"
 import {useDispatch, useSelector} from "react-redux";
 
 
