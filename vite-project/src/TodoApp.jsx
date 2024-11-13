@@ -1,25 +1,15 @@
 import { useEffect, useReducer, useRef } from "react"
-import { TodoReducer } from "./components/TodoReducer"
 import { TodoForm, TodoList, Title } from "./components"
 import * as types from "./components/types"
+import {useDispatch, useSelector} from "react-redux";
 
-const init = () => {
-  return JSON.parse(localStorage.getItem( 'todos' )) || []
-}
-
-const initialState =  [{
-  id: new Date().getTime(),
-  descripcion: 'Hacer los challenges',
-  done: false
-}]
 
 export const TodoApp = () => {
+  const todos = useSelector((state) => state.todos);
+  console.log(todos);
+  
   const inputRef = useRef();
-  const [todos, dispatchTodo] = useReducer(TodoReducer, initialState, init);
-
-  useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos));
-  }, [ todos ])
+  // const [todos, dispatchTodo] = useReducer(TodoReducer, initialState, init);
 
 
   // UseMemo
@@ -39,19 +29,18 @@ export const TodoApp = () => {
         type: types.CREATE_TODO,
         payload: newTodo
       }
-      dispatchTodo(action)
+      useDispatch(action)
     }
   }
-
   return (
     <>
       <Title total={todos.length} missing={todos.filter((todo) => todo.done == false).length}/>
       <div className="row">
         <div className="col-7">
-          <TodoList todos={todos}/>
+          <TodoList/>
         </div>
         <div className="col-5">
-          <TodoForm OnNewTodo={OnNewTodo} inputRef={inputRef}/>
+          <TodoForm OnNewTodo={OnNewTodo}/>
         </div>
       </div>
     </>
